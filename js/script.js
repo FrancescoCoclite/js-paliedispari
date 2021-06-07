@@ -12,12 +12,34 @@ console.log(numPc);
 function myRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
- var risultato = numUtente + numPc;
- console.log(risultato);
 
-function vincitore(parDis,risultato) {
-    if(parDis == 'pari' &&  risultato % 2 == 0)
-    {
-     return console.log('hai vinto');;
+function add(num1,num2) {
+    
+    var risultato = (num1 + num2);
+    return risultato;
+}   
+
+var somma = add(numUtente, numPc);
+ console.log(somma);
+
+function vincitore(x) {
+
+    if(x % 2 ==0){
+        return console.log('è pari');
     }
+    else{
+        return console.log('è dispari');
+    }
+
 }
+
+var vinto = vincitore(somma);
+
+if(vinto == parDis){
+
+    console.log('utente vince');   
+}
+else{
+    console.log('computer vince');
+}
+
