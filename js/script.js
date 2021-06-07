@@ -72,7 +72,7 @@ function palindroma(variabile) {
     for (var i = 0; i<variabile.length; i++){
         if (variabile[i] != variabile[variabile.length - (i + 1)]){
             return 'non è palindroma';
-        }else
-            return 'è palindroma';
+        }
     }
+    return 'è palindroma';
 }
