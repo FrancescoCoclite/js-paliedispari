@@ -12,10 +12,12 @@ console.log(numPc);
 function myRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
- var risultato = numUtente + numPc
+ var risultato = numUtente + numPc;
  console.log(risultato);
 
-function vincitore (risultato) {
-    if (parDis = (riultato % 0))
-    
+function vincitore(parDis,risultato) {
+    if(parDis == 'pari' &&  risultato % 2 == 0)
+    {
+     return console.log('hai vinto');;
+    }
 }
